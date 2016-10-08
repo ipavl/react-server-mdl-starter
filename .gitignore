@@ -1,5 +1,6 @@
 babel_cache
 src/static/js/bundle.js
+src/static/js/bundle.js.map
 
 # Created by https://www.gitignore.io/api/node
 
