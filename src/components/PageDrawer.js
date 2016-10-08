@@ -7,7 +7,7 @@ export default class PageDrawer extends React.Component {
     return (
       <Drawer title="Title">
         <Navigation>
-          <Link to="">Link</Link>
+          <Link to="/projects">Projects</Link>
           <Link to="">Link</Link>
           <Link to="">Link</Link>
           <Link to="">Link</Link>

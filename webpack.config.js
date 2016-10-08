@@ -31,5 +31,5 @@ module.exports = {
       dead_code: true,
     }),
   ],
-  devtool: 'source-map',
+  //devtool: 'source-map',
 };

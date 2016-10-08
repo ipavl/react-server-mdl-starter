@@ -7,7 +7,7 @@ export default class PageHeader extends React.Component {
     return (
       <Header title={<Link to="/">Title</Link>}>
         <Navigation className="mdl-layout--large-screen-only">
-          <Link to="">Link</Link>
+          <Link to="/projects">Projects</Link>
           <Link to="">Link</Link>
           <Link to="">Link</Link>
           <Link to="">Link</Link>
