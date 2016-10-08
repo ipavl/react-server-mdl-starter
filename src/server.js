@@ -33,7 +33,7 @@ app.get('*', (request, response) => {
       if (renderProps) {
         markup = renderToString(<RouterContext {...renderProps} />);
       } else {
-        markup = renderToString(<NotFoundPage/>);
+        markup = renderToString(<NotFoundPage />);
         response.status(404);
       }
 

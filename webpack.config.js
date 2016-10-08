@@ -13,9 +13,9 @@ module.exports = {
       loader: ['babel-loader'],
       query: {
         cacheDirectory: 'babel_cache',
-        presets: ['react', 'es2015']
-      }
-    }]
+        presets: ['react', 'es2015'],
+      },
+    }],
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -26,9 +26,10 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false },
       mangle: true,
-      sourcemap: false,
+      sourceMap: true,
       beautify: false,
       dead_code: true,
-    })
-  ]
+    }),
+  ],
+  devtool: 'source-map',
 };

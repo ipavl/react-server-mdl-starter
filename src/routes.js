@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
-import Layout from './components/Layout';
+import PageLayout from './components/PageLayout';
 import IndexPage from './components/IndexPage';
 import NotFoundPage from './components/NotFoundPage';
 
 const routes = (
-  <Route path="/" component={Layout}>
+  <Route path="/" component={PageLayout}>
     <IndexRoute component={IndexPage} />
     <Route path="*" component={NotFoundPage} />
   </Route>

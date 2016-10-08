@@ -1,0 +1,11 @@
+.mdl-layout-title a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1025px) {
+  .mdl-layout__content,
+  .mdl-mini-footer__left-section {
+    padding: 0 24px;
+  }
+}
