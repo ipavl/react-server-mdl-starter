@@ -4,34 +4,33 @@ import projects from '../../data/projects';
 import NotFoundPage from '../NotFoundPage';
 
 export default class ProjectDetailsPage extends React.Component {
-  getProjectDetails() {
+  constructor(props) {
+    super(props);
+
     for (let i = 0; i < projects.length; i++) {
-      if (projects[i].slug === this.props.params.slug) {
-        return projects[i];
+      if (projects[i].slug === props.params.slug) {
+        this.state = { project: projects[i] };
+        break;
       }
     }
-
-    return null;
   }
 
   render() {
-    let project = this.getProjectDetails();
-
-    if (project === null) {
+    if (this.state.project === null) {
       // TODO: Send back a 404 status code
       return <NotFoundPage />;
     }
 
     return (
       <div>
-        <h1>{project.name}</h1>
+        <h1>{this.state.project.name}</h1>
 
-        <div>{project.description}</div>
+        <div>{this.state.project.description}</div>
 
         <h2>Tags</h2>
 
         <List>
-          {project.tags.map(tagData =>
+          {this.state.project.tags.map(tagData =>
             <ListItem key={tagData}>
               <ListItemContent>
                 {tagData}
