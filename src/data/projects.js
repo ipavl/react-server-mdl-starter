@@ -9,48 +9,12 @@ const projects = [
     ],
   },
   {
-    name: 'reactsite',
-    slug: 'reactsite1',
-    description: 'A site built with React.',
+    name: 'Other Project',
+    slug: 'other-project',
+    description: 'Some other project.',
     tags: [
-      'React',
-      'JavaScript',
-    ],
-  },
-  {
-    name: 'reactsite',
-    slug: 'reactsite2',
-    description: 'A site built with React.',
-    tags: [
-      'React',
-      'JavaScript',
-    ],
-  },
-  {
-    name: 'reactsite',
-    slug: 'reactsite3',
-    description: 'A site built with React.',
-    tags: [
-      'React',
-      'JavaScript',
-    ],
-  },
-  {
-    name: 'reactsite',
-    slug: 'reactsite4',
-    description: 'A site built with React.',
-    tags: [
-      'React',
-      'JavaScript',
-    ],
-  },
-  {
-    name: 'reactsite',
-    slug: 'reactsite5',
-    description: 'A site built with React.',
-    tags: [
-      'React',
-      'JavaScript',
+      'Not React',
+      'Not JavaScript',
     ],
   },
 ];
