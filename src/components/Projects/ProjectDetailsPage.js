@@ -1,7 +1,7 @@
 import React from 'react';
 import { List, ListItem, ListItemContent } from 'react-mdl';
-import projects from '../data/projects';
-import NotFoundPage from './NotFoundPage';
+import projects from '../../data/projects';
+import NotFoundPage from '../NotFoundPage';
 
 export default class ProjectDetailsPage extends React.Component {
   getProjectDetails() {

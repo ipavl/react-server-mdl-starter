@@ -1,7 +1,7 @@
 import React from 'react';
 import { List } from 'react-mdl';
 import ProjectListItem from './ProjectListItem';
-import projects from '../data/projects';
+import projects from '../../data/projects';
 
 export default class ProjectsPage extends React.Component {
   render() {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
-import PageLayout from './components/PageLayout';
+import PageLayout from './components/Layout/PageLayout';
 import IndexPage from './components/IndexPage';
-import ProjectsPage from './components/ProjectsPage';
-import ProjectDetailsPage from './components/ProjectDetailsPage';
+import ProjectsPage from './components/Projects/ProjectsPage';
+import ProjectDetailsPage from './components/Projects/ProjectDetailsPage';
 import NotFoundPage from './components/NotFoundPage';
 
 const routes = (
