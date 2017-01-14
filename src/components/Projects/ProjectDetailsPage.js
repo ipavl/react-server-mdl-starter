@@ -11,9 +11,9 @@ export default class ProjectDetailsPage extends React.Component {
       project: null,
     };
 
-    for (let i = 0; i < projects.length; i++) {
-      if (projects[i].slug === props.params.slug) {
-        this.state = { project: projects[i] };
+    for (const project of projects) {
+      if (project.slug === props.params.slug) {
+        this.state = { project };
         break;
       }
     }
